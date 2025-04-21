@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case de Sucesso: Automação na Prática</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #bbbbbb;
+      margin-bottom: 1rem;
+    }
+    /* Partículas em Toda a Tela */
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #0a0a0a;
+    }
+    /* Estilos para o rodapé */
+    footer {
+      background: #ffffff00;
+      color: #aaa;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+      text-align: center;
+      border-top: 1px solid #333;
+      margin-top: 2rem;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Partículas em Toda a Tela -->
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <h1>Case de Sucesso: Automação na Prática</h1>
+    <p>A implementação de automação tem gerado resultados impressionantes para diversas empresas. Neste artigo, apresentamos alguns cases de sucesso que demonstram como a automação pode ser aplicada na prática para melhorar processos e aumentar a satisfação do cliente.</p>
+    <p>Aqui estão alguns exemplos:</p>
+    <ol>
+      <li><strong>Empresa de E-commerce:</strong> Implementou um chatbot para atendimento ao cliente, reduzindo o tempo de resposta em 70% e aumentando as vendas em 30%.</li>
+      <li><strong>Clínica Médica:</strong> Utilizou um chatbot para agendamento de consultas, melhorando a eficiência operacional e reduzindo o tempo de espera dos pacientes.</li>
+      <li><strong>Restaurante:</strong> Automatizou o processo de reservas e pedidos online, resultando em um aumento de 25% no número de clientes atendidos.</li>
+    </ol>
+    <p>Esses exemplos mostram como a automação pode ser uma ferramenta poderosa para transformar operações e melhorar a experiência do cliente.</p>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 LYNK NEXUS. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Particles.js com Configurações Otimizadas -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 }},
+        color: { value: ["#f3b300", "#f3b300", "#f3b300"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.7, anim: { enable: true, speed: 0.9 }},
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#f3b300",
+          opacity: 0.5,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "window",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100, duration: 0.2 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
